@@ -13,6 +13,7 @@
 #define NUMS 2
 #define NAVI 3
 #define LANG LC(SPACE)
+#define BTS(n) &bt BT_SEL n
 
 / {
 	keymap {
@@ -75,11 +76,11 @@
 // |     |     |     |     |     |       |        |  |        |       | PREV  |  PP  | NEXT|     |     |
 //                   | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |      |
 			bindings = <
-&trans &trans &trans &trans   &trans   &trans                       &trans     &trans     &trans           &trans     &trans    &trans
+BTS(0) BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &trans     &trans     &trans           &trans     &trans    &trans
 &trans &trans &trans &trans   &trans   &trans                       &kp HOME   &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN &kp PAUSE_BREAK
 &trans &trans &trans &trans   &trans   &trans                       &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT  &trans    &trans
-&trans &trans &trans &trans   &trans   &trans   &trans    &trans    &trans     &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
-                     &kp LALT &kp LGUI &mo SPEC &mo NUMS  &kp LANG  &kp SPACE  &mo NAVI   &none
+&trans &trans &trans &trans   &trans   &trans   &bt BT_CLR &trans   &trans     &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
+                     &kp LALT &kp LGUI &mo SPEC &mo NUMS   &kp LANG &kp SPACE  &mo NAVI   &none
 			>;
 		};
 };
