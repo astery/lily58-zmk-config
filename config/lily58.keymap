@@ -12,7 +12,7 @@
 #define SPEC 1
 #define NUMS 2
 #define NAVI 3
-#define LANG &kp LC(SPACE)
+#define LANG LC(SPACE)
 
 / {
 	keymap {
