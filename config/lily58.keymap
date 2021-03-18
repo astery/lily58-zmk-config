@@ -31,7 +31,7 @@
 &kp ESC   &kp Q  &kp W  &kp E    &kp R    &kp T                          &kp Y  &kp U    &kp I     &kp O   &kp P     &kp ENTER
 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                          &kp H  &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B    &none      &none      &kp N  &kp M    &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH
-                        &kp LALT &kp LGUI &mo SPEC &mo NUMS   &kp LSHIFT &kp SPACE  &mo NAVI &kp LANG
+                        &kp LALT &kp LGUI &mo SPEC &mo NUMS   &kp LSHFT  &kp SPACE  &mo NAVI &kp LANG
 			>;
 		};
 
@@ -46,7 +46,7 @@
 &trans    &trans &trans   &trans     &trans    &trans                              &trans    &trans     &kp LT    &kp GT    &none      &kp DEL
 &kp TILDE &trans &trans   &trans     &trans    &trans                              &trans    &kp PIPE   &kp LBRC  &kp RBRC  &kp UNDER  &kp BACKSLASH
 &kp EXCL  &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET                           &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS  &kp SLASH
-&trans    &trans &trans   &trans     &trans    &trans    &trans          &trans    &trans    &kp EQL    &kp LBKT  &kp RBKT  &kp PLUS   &trans
+&trans    &trans &trans   &trans     &trans    &trans    &trans          &trans    &trans    &kp EQUAL &kp LBKT  &kp RBKT  &kp PLUS   &trans
                           &trans     &trans    &trans    &trans          &trans    &trans    &trans   &trans
 			>;
 		};
