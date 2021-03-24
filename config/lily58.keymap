@@ -44,7 +44,7 @@
 //                   | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |     |
 			bindings = <
 &trans    &trans &trans   &trans     &trans    &trans                              &trans    &trans     &kp LT    &kp GT    &none      &kp DEL
-&kp TILDE &trans &trans   &trans     &trans    &trans                              &trans    &kp PIPE   &kp LBRC  &kp RBRC  &kp UNDER  &kp BACKSLASH
+&kp TILDE &kp GRAVE &trans   &trans     &trans    &trans                              &trans    &kp PIPE   &kp LBRC  &kp RBRC  &kp UNDER  &kp BACKSLASH
 &kp EXCL  &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET                           &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS  &kp SLASH
 &trans    &trans &trans   &trans     &trans    &trans    &trans          &trans    &trans    &kp EQUAL &kp LBKT  &kp RBKT  &kp PLUS   &trans
                           &trans     &trans    &trans    &trans          &trans    &trans    &trans   &trans
