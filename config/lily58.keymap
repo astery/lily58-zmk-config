@@ -76,7 +76,7 @@
 // |     |     |     |     |     |  F12  |        |  | BT CLR |       | PREV  |  PP  | NEXT|     |     |
 //                   |     |     |       |        |  |        |       |       |      |
 			bindings = <
-BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &out OUT_TOG  &trans     &trans     &trans           &trans     &trans    &trans
+BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &out OUT_TOG  &trans     &trans           &trans     &trans    &trans
 &kp TAB &trans &trans &trans   &trans   &kp TILDE                    &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN &kp PAUSE_BREAK
 &kp F1  &kp F2 &kp F3 &kp F4   &kp F5   &kp F6                       &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC  &kp DEL
 &kp F7  &kp F8 &kp F9 &kp F10  &kp F11  &kp F12  &trans   &bt BT_CLR &trans        &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
