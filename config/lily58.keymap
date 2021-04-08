@@ -21,33 +21,33 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------
-// |  TAB   |  1  |  2  |  3  |  4  |   5   |                    |   6   |   7   |  8  |  9  |  0  | BKSPC |
+// |   1    |  2  |  3  |  4  |  5  |   6   |                    |   7   |   8   |  9  |  0  |     | BKSPC |
 // |  ESC   |  Q  |  W  |  E  |  R  |   T   |                    |   Y   |   U   |  I  |  O  |  P  | ENTER |
 // |  CTRL  |  A  |  S  |  D  |  F  |   G   |                    |   H   |   J   |  K  |  L  |  ;  |   '   |
 // |  SHIFT |  Z  |  X  |  C  |  V  |   B   |        |  |        |   N   |   M   |  ,  |  .  |  /  |   \   |
-//                      | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |     |
+//                      | ALT | GUI | SPEC  |  NAVI  |  | SHIFT  |  SPC  | LANG  |     |
 			bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                         &kp N6 &kp N7   &kp N8    &kp N9  &kp N0    &kp BSPC
+&kp N1    &kp N2 &kp N3 &kp N4   &kp N5   &kp N6                         &kp N7 &kp N8   &kp N9    &kp N0  &none     &kp BSPC
 &kp ESC   &kp Q  &kp W  &kp E    &kp R    &kp T                          &kp Y  &kp U    &kp I     &kp O   &kp P     &kp ENTER
 &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                          &kp H  &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B    &none      &none      &kp N  &kp M    &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH
-                        &kp LALT &kp LGUI &mo SPEC &mo NUMS   &kp LSHFT  &kp SPACE  &mo NAVI &kp LANG
+                        &kp LALT &kp LGUI &mo SPEC &mo NAVI   &kp LSHFT  &kp SPACE  &kp LANG  &none
 			>;
 		};
 
 		spec_layer {
 // ----------------------------------------------------------------------------------------------------
-// |     |     |     |     |     |       |                    |       |       |  <  |  >  |  +  | DEL |
-// |  ~  |     |     |     |     |       |                    |       |   |   |  {  |  }  |  _  |  \  |
-// |  !  |  @  |  #  |  $  |  %  |   ^   |                    |   &   |   *   |  (  |  )  |  -  |  /  |
-// |     |     |     |     |     |       |        |  |        |       |       |  [  |  ]  |     |     |
-//                   | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |     |
+// |     |     |     |     |     |       |                    |       |       |  <  |  >  |     | DEL |
+// |  1  |  2  |  3  |  4  |  5  |   6   |                    |   7   |   8   |  9  |  0  |  _  |  =  |
+// |  !  |  @  |  #  |  $  |  %  |   ^   |                    |   &   |   *   |  (  |  )  |  -  |  |  |
+// |     |  ~  |  \  |  '  |  "  |   `   |        |  |        |   +   |   {   |  [  |  ]  |  }  |     |
+//                   |     |     |       |        |  |        |       |       |     |
 			bindings = <
-&trans    &trans    &trans   &trans     &trans    &trans                              &trans    &trans     &kp LT    &kp GT    &none      &kp DEL
-&kp TILDE &kp GRAVE &trans   &trans     &trans    &trans                              &trans    &kp PIPE   &kp LBRC  &kp RBRC  &kp UNDER  &kp BACKSLASH
-&kp EXCL  &kp AT    &kp HASH &kp DOLLAR &kp PRCNT &kp CARET                           &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS  &kp SLASH
-&trans    &trans    &trans   &trans     &trans    &trans    &trans          &trans    &kp QMARK &kp EQUAL &kp LBKT  &kp RBKT  &kp PLUS   &trans
-                             &trans     &trans    &trans    &trans          &trans    &trans    &trans   &trans
+&trans    &trans    &trans   &trans     &trans    &trans                        &trans    &trans     &kp LT    &kp GT    &none      &kp DEL
+&kp N1    &kp N2    &kp N3   &kp N4     &kp N5    &kp N6                        &kp N7    &kp N8     &kp N9    &kp N0    &kp UNDER  &kp EQUAL
+&kp EXCL  &kp AT    &kp HASH &kp DOLLAR &kp PRCNT &kp CARET                     &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp MINUS  &kp PIPE
+&trans    &kp TIDLE &kp BSLH &kp SQT    &kp DQT   &kp GRAVE   &trans  &trans    &kp PLUS  &kp LBRC   &kp LBKT  &kp RBKT  &kp RBRC   &trans
+                             &trans     &trans    &trans      &trans  &trans    &trans    &trans   &trans
 			>;
 		};
 
@@ -55,31 +55,31 @@
 // ----------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |       |                    |       |       |     |     |     |     |
 // |     |     |     |     |     |       |                    |       |       |     |     |     |     |
-// |  1  |  2  |  3  |  4  |  5  |   6   |                    |   7   |   8   |  9  |  0  |  =  |BKSPC|
+// |     |     |     |     |     |       |                    |       |       |     |     |     |     |
 // |     |     |     |     |     |       |        |  |        |       |       |     |     |     |     |
-//                   | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |     |
+//                   |     |     |       |        |  |        |       |       |     |
 			bindings = <
 &trans &trans &trans &trans   &trans   &trans                       &trans     &trans   &trans     &trans  &trans    &trans
 &trans &trans &trans &trans   &trans   &trans                       &trans     &trans   &trans     &trans  &trans    &trans
-&kp N1 &kp N2 &kp N3 &kp N4   &kp N5   &kp N6                       &kp N7     &kp N8   &kp N9     &kp N0  &kp BSPC  &kp DEL
-&trans &trans &trans &trans   &trans   &trans   &trans    &trans    &trans     &trans   &kp COMMA  &kp DOT &trans    &trans
+&trans &trans &trans &trans   &trans   &trans                       &trans     &trans   &trans     &trans  &trans    &trans
+&trans &trans &trans &trans   &trans   &trans   &trans    &trans    &trans     &trans   &trans     &trans  &trans    &trans
                      &trans   &trans   &trans   &trans    &trans    &trans     &trans   &trans
 			>;
 		};
 
 		navi_layer {
 // ----------------------------------------------------------------------------------------------------
-// |     |     |     |     |     |       |                    |       |       |      |     |     |     |
-// |     |     |     |     |     |       |                    | HOME  | PGDN  | PGUP | END | PSCR|PAUSE|
-// |     |     |     |     |     |       |                    | LEFT  | DOWN  |  UP  |RIGHT|     |     |
-// |     |     |     |     |     |       |        |  |        |       | PREV  |  PP  | NEXT|     |     |
-//                   | ALT | GUI | SPEC  |  NUMS  |  |  LANG  |  SPC  | NAVI  |      |
+// | BT1 | BT1 | BT1 | BT1 |     |       |                    | OUT_T |       |      |     |     |     |
+// | TAB |     |     |     |     |   ё   |                    | HOME  | PGDN  | PGUP | END | PSCR|PAUSE|
+// | F1  |     |     |     |     |       |                    | LEFT  | DOWN  |  UP  |RIGHT|BKSPC| DEL |
+// |     |     |     |     |     |  F12  |        |  | BT CLR |       | PREV  |  PP  | NEXT|     |     |
+//                   |     |     |       |        |  |        |       |       |      |
 			bindings = <
-BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &trans     &trans     &trans           &trans     &trans    &trans
-&kp TAB &trans &trans &trans   &trans   &trans                       &kp HOME   &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN &kp PAUSE_BREAK
-&kp F1  &kp F2 &kp F3 &kp F4   &kp F5   &kp F6                       &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC  &kp DEL
-&kp F7  &kp F8 &kp F9 &kp F10  &kp F11  &kp F12  &trans   &bt BT_CLR &trans     &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
-                      &trans   &trans   &trans   &trans   &trans     &trans     &trans     &trans
+BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &out OUT_TOG  &trans     &trans     &trans           &trans     &trans    &trans
+&kp TAB &trans &trans &trans   &trans   &kp TILDE                    &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN &kp PAUSE_BREAK
+&kp F1  &kp F2 &kp F3 &kp F4   &kp F5   &kp F6                       &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC  &kp DEL
+&kp F7  &kp F8 &kp F9 &kp F10  &kp F11  &kp F12  &trans   &bt BT_CLR &trans        &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
+                      &trans   &trans   &trans   &trans   &trans     &trans        &trans     &trans
 			>;
 		};
   };
