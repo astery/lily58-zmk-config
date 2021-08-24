@@ -73,13 +73,13 @@
 // | BT1 | BT1 | BT1 | BT1 |     |       |                    | OUT_T |       |      |     |     |     |
 // | TAB |     |     |     |     |   ё   |                    | HOME  | PGDN  | PGUP | END | PSCR|PAUSE|
 // | F1  |     |     |     |     |       |                    | LEFT  | DOWN  |  UP  |RIGHT|BKSPC| DEL |
-// |     |     |     |     |     |  F12  |        |  | BT CLR |       | PREV  |  PP  | NEXT|     |     |
+// |     |     |     |     |     |  F12  |        |  | BT CLR | VOLDN | PREV  |  PP  | NEXT|VOLUP|     |
 //                   |     |     |       |        |  |        |       |       |      |
 			bindings = <
-BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &out OUT_TOG  &trans     &trans           &trans     &trans    &trans
-&kp TAB &trans &trans &trans   &trans   &kp TILDE                    &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN &kp PAUSE_BREAK
-&kp F1  &kp F2 &kp F3 &kp F4   &kp F5   &kp F6                       &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC  &kp DEL
-&kp F7  &kp F8 &kp F9 &kp F10  &kp F11  &kp F12  &trans   &bt BT_CLR &trans        &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans
+BTS(0)  BTS(1) BTS(2) BTS(3)   BTS(4)   &trans                       &out OUT_TOG  &trans     &trans           &trans     &trans        &trans
+&kp TAB &trans &trans &trans   &trans   &kp TILDE                    &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
+&kp F1  &kp F2 &kp F3 &kp F4   &kp F5   &kp F6                       &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
+&kp F7  &kp F8 &kp F9 &kp F10  &kp F11  &kp F12  &trans   &bt BT_CLR &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
                       &trans   &trans   &trans   &trans   &trans     &trans        &trans     &trans
 			>;
 		};
