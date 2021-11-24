@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+			bindings = <
+	&kp A   &kp A &kp A &kp A &kp A &kp A                                &kp A &kp A  &kp A     &kp A   &kp A    &kp A
+	&kp A   &kp A &kp A &kp A &kp A &kp A                                &kp A &kp A  &kp A     &kp A   &kp A    &kp A
+	&kp A   &kp A &kp A &kp A &kp A &kp A &kp A &kp A        &kp A &kp A &kp A &kp A &kp A &kp A &kp A &kp A
+	                    &kp A &kp A &kp A &kp A &kp A        &kp A &kp A &kp A &kp A &kp A
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN &inc_dec_kp A B>;
+		};
+	};
+};
