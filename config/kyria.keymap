@@ -53,6 +53,20 @@
 		};
 	};
 
+		nums_layer {
+// ----------------------------------------------------------------------------------------------------
+// |     |     |     |     |     |       |                      |       |       |     |     |     |     |
+// |     |     |     |     |     |       |                      |       |       |     |     |     |     |
+// |     |     |     |     |     |       |    |    |  |    |    |       |       |     |     |     |     |
+//                   |     |     |       |    |    |  |    |    |       |       |     |
+			bindings = <
+&kp N1 &trans &trans &trans   &trans   &trans                                 &trans  &trans   &trans  &trans  &trans  &trans
+&trans &trans &trans &trans   &trans   &trans                                 &trans  &trans   &trans  &trans  &trans  &trans
+&trans &trans &trans &trans   &trans   &trans  &trans &trans   &trans &trans  &trans  &trans   &trans  &trans  &trans  &trans
+                     &trans   &trans   &trans  &trans &trans   &trans &trans  &trans  &trans   &trans
+			>;
+		};
+
 		navi_layer {
 // ----------------------------------------------------------------------------------------------------
 // | TAB |     |     |     |     |  ё  |                               | HOME  | PGDN | PGUP | END | PSCR|PAUSE|
