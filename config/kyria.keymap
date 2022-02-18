@@ -75,8 +75,8 @@
 //                    |      |     |     |     |     |  |        |       |       |      |
 			bindings = <
 &kp TAB &trans &trans &trans   &trans   &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
-LG(1)   LG(2)  LG(3)  LG(4)    LG(5)    LG(6)                                           &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
-LG(7)   LG(8)  LG(9)  LG(0)    &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
+LG(N1)  LG(N2) LG(N3) LG(N4)   LG(N5)   LG(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
+LG(N7)  LG(N8) LG(N9) LG(N0)   &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
                       &trans   &trans   &trans   &trans &trans  &trans     &trans       &trans        &trans     &trans
 			>;
 
