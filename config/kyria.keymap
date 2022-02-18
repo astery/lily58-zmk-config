@@ -15,7 +15,7 @@
 #define NAVI 3
 #define LANG LC(SPACE)
 #define BTS(n) &bt BT_SEL n
-#define M(n) &kp LG n
+#define MN(n) &kp LG n
 
 / {
 	keymap {
@@ -76,8 +76,8 @@
 //                    |      |     |     |     |     |  |        |       |       |      |
 			bindings = <
 &kp TAB &trans &trans &trans   &trans   &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
-M(N1)   M(N2)  M(N3)  M(N4)    M(N5)    M(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
-M(N7)   M(N8)  M(N9)  M(N0)    &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
+MN(N1)  MN(N2) MN(N3) MN(N4)   MN(N5)   MN(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
+MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
                       &trans   &trans   &trans   &trans &trans  &trans     &trans       &trans        &trans     &trans
 			>;
 
