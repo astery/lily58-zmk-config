@@ -23,15 +23,15 @@
 
 		default_layer {
 // -----------------------------------------------------------------------------------------------------------
-// | ESC   |  Q  |  W  |  E  |  R  |  T   |                           |  Y  |  U   |  I  |  O  |  P  | ENTER |
-// | CTRL  |  A  |  S  |  D  |  F  |  G   |                           |  H  |  J   |  K  |  L  |  ;  |   '   |
-// | SHIFT |  Z  |  X  |  C  |  V  |  B   |      |     | |    |       |  N  |  M   |  ,  |  .  |  /  |   \   |
-//                     | ROT | GUI | SPEC | NAVI | ALT | |    | SHIFT | SPC | LANG | ROT |
+// | ESC   |  Q  |  W  |  E  |  R  |  T   |                            |  Y  |  U   |  I  |  O  |  P  | ENTER |
+// | CTRL  |  A  |  S  |  D  |  F  |  G   |                            |  H  |  J   |  K  |  L  |  ;  |   '   |
+// | SHIFT |  Z  |  X  |  C  |  V  |  B   |      |     | |       |     |  N  |  M   |  ,  |  .  |  /  |   \   |
+//                     | ROT | ALT | GUI  | SPEC | NUM | | SHIFT | SPC | NAV | LANG | ROT |
 			bindings = <
 &kp ESC   &kp Q  &kp W  &kp E  &kp R    &kp T                                            &kp Y     &kp U    &kp I     &kp O   &kp P     &kp ENTER
 &kp LCTRL &kp A  &kp S  &kp D  &kp F    &kp G                                            &kp H     &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
-&kp LSHFT &kp Z  &kp X  &kp C  &kp V    &kp B    &none    &none     &none     &none      &kp N     &kp M    &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH
-                        &none  &kp LGUI &mo SPEC &mo NAVI &kp LALT  &mo NUMS  &kp LSHFT  &kp SPACE &kp LANG &none
+&kp LSHFT &kp Z  &kp X  &kp C  &kp V    &kp B    &none    &none      &none     &none     &kp N     &kp M    &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH
+                        &none  &kp LALT &kp LGUI &mo SPEC &mo NUMS   &kp LSHFT &kp SPACE &mo NAVI  &kp LANG &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
