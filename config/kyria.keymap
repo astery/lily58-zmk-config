@@ -13,7 +13,7 @@
 #define SPEC 1
 #define NUMS 2
 #define NAVI 3
-#define LANG LMETA(SPACE)
+#define LANG LG(SPACE)
 #define BTS(n) &bt BT_SEL n
 #define MN(n) &kp LG n
 
