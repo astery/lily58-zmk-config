@@ -6,8 +6,12 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
+some nonsense
+
 / {
+here
     chosen {
+    and there
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
