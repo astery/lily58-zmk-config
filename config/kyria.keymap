@@ -17,7 +17,13 @@
 #define BTS(n) &bt BT_SEL n
 #define MN(n) &kp LG n
 
+
+
 / {
+	chosen {
+		zephyr,console = &cdc_acm_uart;
+	};
+
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -83,5 +89,13 @@ MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out 
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
+	};
+};
+
+&usbd {
+	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+		compatible = "zephyr,cdc-acm-uart";
+		label = "CDC_ACM_0";
 	};
 };
