@@ -34,8 +34,7 @@
 // | SHIFT |  Z  |  X  |  C  |  V  |  B   |      |     | |      |       |  N  |  M   |  ,  |  .  |  /  |   \   |
 //                     | ROT | GUI | SPEC | NAVI | ALT | | NUMS | SHIFT | SPC | LANG | ROT |
 			bindings = <
-&bt BT_CLR &out OUT_TOG
-  &kp W  &kp E  &kp R    &kp T                                            &kp Y     &kp U    &kp I     &kp O   &bt BT_CLR &out OUT_TOG
+&kp ESC   &kp Q  &kp W  &kp E  &kp R    &kp T                                            &kp Y     &kp U    &kp I     &kp O   &kp P     &kp ENTER
 &kp LCTRL &kp A  &kp S  &kp D  &kp F    &kp G                                            &kp H     &kp J    &kp K     &kp L   &kp SEMI  &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C  &kp V    &kp B    &none    &none     &none     &none      &kp N     &kp M    &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH
                         &none  &kp LGUI &mo SPEC &mo NAVI &kp LALT  &mo NUMS  &kp LSHFT  &kp SPACE &kp LANG &none
@@ -82,7 +81,7 @@
 // |      |     |     |META+0| F11 | F12 | BT1 | BT2 |  | BT CLR | OUT_T | VOLDN | PREV |  PP  | NEXT|VOLUP|     |
 //                    |      |     |     |     |     |  |        |       |       |      |
 			bindings = <
-&kp TAB &bt BT_CLR &out OUT_TOG &trans   &kp INS  &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
+&kp TAB &trans &trans &trans   &kp INS  &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
 MN(N1)  MN(N2) MN(N3) MN(N4)   MN(N5)   MN(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
 MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
                       &trans   &trans   &trans   &trans &trans  &trans     &trans       &trans        &trans     &trans
