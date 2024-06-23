@@ -81,7 +81,7 @@
 // |      |     |     |META+0| F11 | F12 | BT1 | BT2 |  | BT CLR | OUT_T | VOLDN | PREV |  PP  | NEXT|VOLUP|     |
 //                    |      |     |     |     |     |  |        |       |       |      |
 			bindings = <
-&kp TAB &bt BT_CLR &trans &trans   &kp INS  &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
+&kp TAB &bt BT_CLR &out OUT_TOG &trans   &kp INS  &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
 MN(N1)  MN(N2) MN(N3) MN(N4)   MN(N5)   MN(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
 MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  BTS(0) BTS(1)  &bt BT_CLR &out OUT_TOG &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
                       &trans   &trans   &trans   &trans &trans  &trans     &trans       &trans        &trans     &trans
