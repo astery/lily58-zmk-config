@@ -83,8 +83,8 @@
 			bindings = <
 &kp TAB &trans &trans &trans   &kp INS  &kp TILDE                                       &kp HOME      &kp PG_DN  &kp PG_UP        &kp END    &kp PSCRN     &kp PAUSE_BREAK
 MN(N1)  MN(N2) MN(N3) MN(N4)   MN(N5)   MN(N6)                                          &kp LEFT      &kp DOWN   &kp UP           &kp RIGHT  &kp BSPC      &kp DEL
-MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  &bt BT_CLR  &out OUT_TOG BTS(0) BTS(1) &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
-                      &trans   &trans   &trans   &trans      &trans       &trans &trans &trans        &trans     &trans
+MN(N7)  MN(N8) MN(N9) MN(N0)   &kp F11  &kp F12  &out OUT_TOG &bt BT_CLR   BTS(0) BTS(1) &kp C_VOL_DN  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &kp C_VOL_UP  &trans
+                      &trans   &trans   &trans   &trans       &trans       &trans &trans &trans        &trans     &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
